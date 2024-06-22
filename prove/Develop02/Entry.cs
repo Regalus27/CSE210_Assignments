@@ -1,35 +1,42 @@
 class Entry
 {
-    String _entryText;
-    String _entryDate;
+    string _entryText;
+    string _entryDate;
+
+    public void CreateEntry(string date, string text)
+    {
+        // Manually create entry from data, such as when loading an entry
+        _entryDate = date;
+        _entryText = text;
+    }
 
     public void DisplayEntry()
     {
-        Console.WriteLine($"Date Written: {this._entryDate}");
-        Console.WriteLine(this._entryText);
+        Console.WriteLine($"Date Written: {_entryDate}");
+        Console.WriteLine(_entryText);
     }
 
-    public String GetDateTime()
+    public string GetDateTime()
     {
-        return this._entryDate;
+        return _entryDate;
     }
 
-    public String GetText()
+    public string GetText()
     {
-        return this._entryText;
+        return _entryText;
     }
 
     private void SetDateTime()
     {
-        this._entryDate = DateTime.Now.ToShortDateString();
+        _entryDate = DateTime.Now.ToShortDateString();
     }
 
     private void SetText(String text)
     {
-        this._entryText = text;
+        _entryText = text;
     }
 
-    public Entry WriteEntry()
+    public void WriteEntry()
     {
         SetDateTime();
 
@@ -41,7 +48,5 @@ class Entry
         Console.WriteLine($"Prompt: {promptGenerator.GetPrompt()}");
 
         SetText(Console.ReadLine());
-
-        return this;
     }
 }
