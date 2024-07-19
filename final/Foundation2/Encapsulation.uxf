@@ -1,0 +1,83 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>10</x><y>10</y><w>160</w><h>230</h></coordinates><panel_attributes>Address
+--
+**Variables (private)**
+string _city
+string _country
+string _state
+string _street
+bool _isInUSA
+--
+**Functions**
+public string GetAddress()
+public bool IsInUSA()
+private string GetCity()
+private string GetCountry()
+private string GetState()
+private string GetStreet()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>180</x><y>10</y><w>220</w><h>170</h></coordinates><panel_attributes>Customer
+--
+**Variables (private)**
+string _firstname
+string _lastname
+Address _address
+--
+**Functions**
+public string GetCustomerSummary()
+public bool IsInUSA()
+private Address GetAddress()
+private string GetName()
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>180</x><y>190</y><w>220</w><h>220</h></coordinates><panel_attributes>Product
+--
+**Variables (private)**
+string _id
+string _name
+double _price
+int _quantity
+--
+**Functions**
+public double GetCost()
+public string GetProductSummary()
+private string GetId()
+private string GetName()
+private double GetPrice()
+private int GetQuantity()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>410</x><y>100</y><w>250</w><h>110</h></coordinates><panel_attributes>PackingLabel
+--
+**Variables (private)**
+List&lt;Product&gt; _products
+--
+**Functions**
+public override string GetLabelSummary()
+private List&lt;Product&gt; GetProducts()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>410</x><y>220</y><w>270</w><h>110</h></coordinates><panel_attributes>ShippingLabel
+--
+**Variables (private)**
+Customer _customer
+--
+**Functions**
+public override string GetLabelSummary()
+private Customer GetCustomer()
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>410</x><y>10</y><w>270</w><h>70</h></coordinates><panel_attributes>/Label/
+--
+**Functions**
+public abstract string GetLabelSummary()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>510</x><y>70</y><w>30</w><h>50</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;30</additional_attributes></element><element><id>Relation</id><coordinates><x>660</x><y>70</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>UMLClass</id><coordinates><x>690</x><y>10</y><w>250</w><h>160</h></coordinates><panel_attributes>Order
+--
+**Variables (private)**
+List&lt;Product&gt; _products
+Customer _customer
+--
+**Functions**
+public string DisplayOrderSummary()
+private double CalculateTotalCost()
+private Customer GetCustomer()
+private List&lt;Product&gt; GetProducts()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>690</x><y>180</y><w>250</w><h>150</h></coordinates><panel_attributes>bg=blue
+**Program Flow:**
+Create an empty list of orders
+Repeat 2 times:
+    Create 2 products
+    Create an address
+    Create a customer w/ above addres
+    Create an order w/ above information
+    Add to list of orders
+Display each order in list</panel_attributes><additional_attributes></additional_attributes></element></diagram>

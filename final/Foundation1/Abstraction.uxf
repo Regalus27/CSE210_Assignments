@@ -1,0 +1,32 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>40</x><y>20</y><w>240</w><h>220</h></coordinates><panel_attributes>_object: Video_
+--
+**Variables (private)**
+List&lt;Comment&gt; _comments
+string _title
+string _creator
+int _videoLengthInSeconds
+--
+**Functions**
+public string GetVideoSummary()
+public void AddComment()
+private string GetCommentSummaries()
+private List&lt;Comment&gt; GetComments()
+private string GetCreator()
+private int GetLength()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>290</x><y>20</y><w>220</w><h>140</h></coordinates><panel_attributes>_object: Comment_
+--
+**Variables (private)**
+string _username
+string _comment
+--
+**Functions**
+public string GetCommentSummary()
+private string GetCommentText()
+private string GetUsername()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>40</x><y>250</y><w>220</w><h>120</h></coordinates><panel_attributes>bg=blue
+**Program Flow:**
+Create an empty list of videos.
+Repeat 3 times:
+    Make a list of comments
+    Make a new video w/ comments
+    Add to list of videos
+Display list of videos</panel_attributes><additional_attributes></additional_attributes></element></diagram>
