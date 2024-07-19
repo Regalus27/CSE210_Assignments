@@ -6,7 +6,7 @@ class Program
     {
         Console.Clear();
         List<Video> videos = [];
-        for(int i = 0; i < 2; i++)
+        for(int i = 0; i < 3; i++)
         {
             List<Comment> comments = [];
             comments.Add(new("user1", "first comment! " + i));
