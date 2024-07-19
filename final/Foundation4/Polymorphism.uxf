@@ -1,0 +1,71 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>100</x><y>110</y><w>320</w><h>220</h></coordinates><panel_attributes>/Activity/
+--
+**Variables (private)**
+string _date # 01 Jan 1999
+int _activityDurationInMinutes
+--
+protected abstract string _name { get; }
+--
+**Functions**
+public string GetSummary()
+protected abstract double CalculateDistance()
+protected abstract double CalculateSpeed()
+protected abstract double CalculatePace()
+private string GetDate()
+private int GetDuration()
+private string GetName()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLActor</id><coordinates><x>500</x><y>40</y><w>60</w><h>110</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLInterface</id><coordinates><x>450</x><y>10</y><w>20</w><h>70</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLActor</id><coordinates><x>310</x><y>40</y><w>60</w><h>110</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>410</x><y>50</y><w>30</w><h>80</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>UMLClass</id><coordinates><x>100</x><y>340</y><w>320</w><h>180</h></coordinates><panel_attributes>Run
+/inherits from Activity/
+--
+**Variables (private)**
+double _distance
+--
+protected override string _name { return "Running"; }
+--
+**Functions**
+public override CalculateDistance()
+public override CalculateSpeed()
+public override CalculatePace()
+private double GetDistance()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>100</x><y>530</y><w>320</w><h>180</h></coordinates><panel_attributes>Bike
+/inherits from Activity/
+--
+**Variables (private)**
+double _speed
+--
+protected override string _name { return "Biking"; }
+--
+**Functions**
+public override CalculateDistance()
+public override CalculateSpeed()
+public override CalculatePace()
+private double GetSpeed()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>100</x><y>720</y><w>320</w><h>180</h></coordinates><panel_attributes>Swim
+/inherits from Activity/
+--
+**Variables (private)**
+int _lapCount
+--
+protected override string _name { return "Swimming"; }
+--
+**Functions**
+public override CalculateDistance()
+public override CalculateSpeed()
+public override CalculatePace()
+private int GetLapCount()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>430</x><y>110</y><w>180</w><h>270</h></coordinates><panel_attributes>**Notes:**
+Make some activities.
+activities.GetSummary()
+
+03 Nov 2022 
+Running 
+(30 min): 
+Distance 4.8 km, 
+Speed: 9.7 kph, 
+Pace: 6.25 min per km
+
+GetDate
+GetName
+(GetDuration min):
+Distance GetDistance km
+Speed: GetSpeed kph
+Pace: GetPace min per km
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element></diagram>
