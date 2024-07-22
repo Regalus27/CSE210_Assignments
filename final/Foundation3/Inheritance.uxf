@@ -1,4 +1,4 @@
-<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>350</x><y>20</y><w>260</w><h>270</h></coordinates><panel_attributes>/Event/
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>240</x><y>30</y><w>260</w><h>270</h></coordinates><panel_attributes>/Event/
 --
 **Variables (private)**
 string _eventName
@@ -15,7 +15,7 @@ protected string GetEventName()
 protected string GetDescription()
 protected string GetEventDate()
 protected string GetEventTime()
-protected Address GetEventAddress()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>110</x><y>40</y><w>160</w><h>200</h></coordinates><panel_attributes>Address
+protected Address GetEventAddress()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>50</y><w>160</w><h>200</h></coordinates><panel_attributes>Address
 --
 **Variables (private)**
 string _city
@@ -28,7 +28,7 @@ public string GetAddress()
 private string GetCity()
 private string GetCountry()
 private string GetState()
-private string GetStreet()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>350</x><y>300</y><w>260</w><h>160</h></coordinates><panel_attributes>Lecture
+private string GetStreet()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>240</x><y>310</y><w>260</w><h>160</h></coordinates><panel_attributes>Lecture
 /inherits from Event/
 --
 **Variables (private)**
@@ -38,7 +38,7 @@ int _capacity
 **Functions**
 public override string GetDetailedMessage()
 private string GetSpeaker()
-private int GetCapacity()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>260</x><y>130</y><w>110</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>90;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>350</x><y>470</y><w>260</w><h>130</h></coordinates><panel_attributes>Reception
+private int GetCapacity()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>150</x><y>140</y><w>110</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>90;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>240</x><y>480</y><w>260</w><h>130</h></coordinates><panel_attributes>Reception
 /inherits from Event/
 --
 **Variables (private)**
@@ -46,7 +46,7 @@ string _email
 --
 **Functions**
 public override string GetDetailedMessage()
-private string GetEmail()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>350</x><y>610</y><w>260</w><h>130</h></coordinates><panel_attributes>Reception
+private string GetEmail()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>240</x><y>620</y><w>260</w><h>130</h></coordinates><panel_attributes>Reception
 /inherits from Event/
 --
 **Variables (private)**
